@@ -10,28 +10,28 @@ function App() {
   const { bg_color, nav_color } = useContext(ColorContext);
   return (
     <>
-      <div className={`${bg_color} `}>
+      <div className={`${bg_color} container_hight`}>
         <Nav />
-        <div className="d-flex justify-content-center my-5 pt-5  ">
+        <div className="d-flex justify-content-center my-5 pt-3  ">
           <Timmer />
         </div>
         <div className="d-flex justify-content-center ">
           <Ongoing />
         </div>
-        <div className="d-flex justify-content-center my-5 pb-4 ">
+        <div className="d-flex justify-content-center my-5 pb-2 ">
           <Tasks />
           <div style={{ height: "50px" }}></div>
         </div>
-        <footer
-          className={`d-flex justify-content-center ${nav_color} align-items-center`}
-          style={{ height: "30px", color: "white" }}
-        >
-          練習用，參考自
-          <a href={`https://pomofocus.io/`} style={{ color: "white" }}>
-            pomofocus
-          </a>{" "}
-        </footer>
       </div>
+      <footer
+        className={`d-flex justify-content-center ${nav_color} align-items-center`}
+        style={{ height: "30px", color: "white" }}
+      >
+        練習用，參考自
+        <a href={`https://pomofocus.io/`} style={{ color: "white" }}>
+          pomofocus
+        </a>{" "}
+      </footer>
     </>
   );
 }

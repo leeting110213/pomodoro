@@ -163,6 +163,9 @@ box-shadow: 0px 2px 1px gray;
   box-shadow: 5px 5px 5px  rgb(75, 74, 74);
   z-index: 10;
 }
+.container_hight{
+  min-height: 100vh;
+}
 
 @media (max-width:1000px) {
   .timmer_container{
