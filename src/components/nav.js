@@ -8,7 +8,7 @@ export default function Nav() {
       <nav className={`navbar navbar-expand-lg bg-body-tertiary ${nav_color} `}>
         <div className={`container-fluid ${nav_color}`}>
           <a className="navbar-brand text_color fw-bold" href="#">
-            我的番茄鐘
+            番茄鐘練習
           </a>
           {/* <button
             className="navbar-toggler"

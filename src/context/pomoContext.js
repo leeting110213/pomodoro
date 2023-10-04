@@ -7,19 +7,22 @@ export const PomoContextProvider = (props) => {
   const [memberOfTime, setMemberOfTime] = useState("1");
   const [nowtask, setnowtask] = useState("");
   const [times, settimes] = useState(1);
+
   useEffect(() => {
     if (taskList.length < 1) {
       const newlist = {
         task_name: "Time to focus!",
         time: Date.now(),
       };
-      setnowtask(newlist);
+      if (!nowtask) {
+        setnowtask(newlist);
+      }
     }
 
     if (!nowtask && taskList.length > 0) {
       setnowtask(taskList[0]);
     }
-  }, [nowtask, taskList.length]);
+  }, [nowtask, taskList]);
 
   return (
     <PomoContext.Provider

@@ -5,10 +5,8 @@ import { PomoContext } from "../context/pomoContext";
 import Completetask from "./completetask";
 
 export default function Tasks() {
-  const { taskList, settaskList, memberOfTime, setMemberOfTime } =
-    useContext(PomoContext);
+  const { taskList } = useContext(PomoContext);
 
-  console.log(taskList);
   return (
     <>
       <div className="task_container  ">

@@ -9,8 +9,7 @@ export default function Task() {
   const [textarea, settextarea] = useState(false);
   const [task_name, settask_name] = useState("");
   const [taxtarea_text, settaxtarea_text] = useState("");
-  const { taskList, settaskList, nowtask, setnowtask } =
-    useContext(PomoContext);
+  const { taskList, settaskList, setnowtask } = useContext(PomoContext);
 
   const addTaskList = (taskList) => {
     let newlist = {
@@ -41,7 +40,7 @@ export default function Task() {
     <>
       {!itemInfo ? (
         <div
-          className="tast_pre_container my-3 d-flex justify-content-center align-items-center fs-4"
+          className="task_pre_container my-3 d-flex justify-content-center align-items-center fs-4"
           onClick={() => setItemInfo(true)}
         >
           <IoAddCircle className="me-2" />

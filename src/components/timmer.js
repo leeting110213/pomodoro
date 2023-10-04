@@ -8,8 +8,7 @@ export default function Timmer() {
   const [timmer, setTimmer] = useState("25:00");
   const [time, settime] = useState(1499);
   // const [item, setitem] = useState("pomo");
-  const { bg_color, setbg_color, item, setitem, nav_color, setnav_color } =
-    useContext(ColorContext);
+  const { setbg_color, item, setitem, setnav_color } = useContext(ColorContext);
   const { times, settimes, taskList, settaskList, nowtask, setnowtask } =
     useContext(PomoContext);
 
